@@ -1,0 +1,20 @@
+/* Reference: Patrick O'Neil's faculty homepage, displaying an update date in 2001. */
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{margin:8px;background:#fff;color:#000;font-family:"Times New Roman",Times,serif;font-size:1rem;line-height:1.25}
+.site{width:100%}
+a:link{color:#0000ee}a:visited{color:#551a8b}a:active{color:#ee0000}a{text-decoration:underline}a:focus-visible{outline:2px solid #0000ee;outline-offset:3px}
+h1{font-size:2rem;line-height:1.15;margin:0 0 .67em;color:#000080}h2{font-size:1.17rem;margin:1em 0;font-weight:bold}h3{font-size:1rem;margin:0 0 4px}p{margin:1em 0}hr{height:0;border:0;border-top:1px solid #999;margin:20px 0}
+.profile{text-align:center;margin:0 0 24px}.profile h1{margin:0 0 20px}.affiliation{font-size:1.17rem;margin:0 0 20px}.portrait{margin:0 auto;width:150px}.portrait img{display:block;width:150px;height:auto}.portrait figcaption{font-size:.875rem;margin-top:4px;color:#444}.intro{max-width:78em}
+section{margin:24px 0}.contents{list-style:none;padding:0;margin:0}.contents li{margin:0 0 3px}.profiles{margin-top:16px}address{font-style:normal}code{font-family:"Courier New",monospace;font-size:1rem;overflow-wrap:anywhere}footer{margin-top:25px}footer hr{margin-bottom:10px}footer address{font-size:.875rem;font-style:italic;color:#444}
+header{margin-bottom:22px}header p{margin:0 0 10px}nav{line-height:1.8}nav a[aria-current=page]{font-weight:bold}header hr{margin:12px 0}.page-heading{margin:0 0 20px}.page-heading h1{margin-bottom:12px}.page-heading p{margin:0}
+.entry{display:grid;grid-template-columns:125px minmax(0,1fr);gap:16px;margin:0 0 18px}.entry p{margin:0 0 3px}.date{font-style:italic}.muted{color:#333}ul{padding-left:30px}li{margin-bottom:6px}.footnote{font-size:.875rem;font-style:italic;margin:24px 0 0}.work-entry{margin:0 0 20px}.work-entry p{margin:0 0 4px}.interests{margin:10px 0}
+.cat-gallery{display:flex;flex-wrap:wrap;gap:24px;margin:24px 0}.cat-gallery figure{margin:0;width:220px}.photo-placeholder{width:100%;height:165px;border:1px solid #999;background:#eee;display:flex;align-items:center;justify-content:center;color:#555;font-size:1rem}.photo-placeholder svg{display:none}.cat-gallery figcaption{font-size:.875rem;margin-top:6px}.skip{position:absolute;top:-100px;left:8px;background:#fff;padding:8px}.skip:focus{top:5px}
+@media(min-width:1600px){.intro{max-width:85em}}
+@media(max-width:600px){body{margin:12px}.profile h1{font-size:1.8rem}.affiliation{font-size:1.1rem}.entry{grid-template-columns:1fr;gap:4px}.profiles{overflow-wrap:anywhere}.cat-gallery figure{width:min(100%,280px)}.photo-placeholder{height:190px}}
+@media print{nav,.skip{display:none}a:link,a:visited{color:#000}.profile,.entry,figure{break-inside:avoid}}
+
+/* Blog pages retain the same document-like academic style. */
+.post-list{list-style:none;padding:0;max-width:75ch}.post-list>li{margin:0 0 24px}.post-list h3{font-size:1.17rem;margin:0 0 5px}.post-list p{margin:5px 0}.post-meta{font-size:.875rem;color:#444}.empty-posts{font-style:italic;color:#555}.blog-post{max-width:78ch}.post-body{line-height:1.5}.post-body h2{margin-top:1.5em}.post-body h3{margin-top:1.2em}.post-body img{max-width:100%;height:auto}.post-body pre{overflow-x:auto;padding:12px;background:#f4f4f4;border:1px solid #ccc}.post-body pre code{font-size:.875rem}.post-body blockquote{border-left:2px solid #999;margin-left:0;padding-left:18px;color:#333}.post-body table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}.post-body th,.post-body td{border:1px solid #aaa;padding:6px 10px}.section-intro{max-width:78em}
+
+.contents ul{list-style:none;padding-left:24px;margin:5px 0 10px}

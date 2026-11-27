@@ -1,0 +1,110 @@
+{
+  "name": "[Your Name]",
+  "institution": "[Institution]",
+  "updated": "2026-11-27",
+  "sections": [
+    {
+      "slug": "work",
+      "title": "Work",
+      "description": "Research, writing, and projects."
+    },
+    {
+      "slug": "cats",
+      "title": "Cat pictures",
+      "description": "Photographs and notes about cats."
+    },
+    {
+      "slug": "forensics",
+      "title": "Forensic Sciences",
+      "description": "Notes and reading on forensic sciences."
+    },
+    {
+      "slug": "chips",
+      "title": "Semiconductors",
+      "description": ""
+    },
+    {
+      "slug": "optics",
+      "title": "Optics",
+      "description": "Notes on light, optics, and photonics."
+    },
+    {
+      "slug": "emergency-lighting",
+      "title": "Emergency Vehicle Lighting",
+      "description": ""
+    },
+    {
+      "slug": "mathematics",
+      "title": "Mathematics",
+      "description": "Problems, proofs, and mathematical notes."
+    },
+    {
+      "slug": "econ",
+      "title": "Economics",
+      "description": "Notes and reading on economics."
+    },
+    {
+      "slug": "art",
+      "title": "Art History",
+      "description": "Notes on art, artists, and their histories."
+    },
+    {
+      "slug": "recs",
+      "title": "Resources for Academia",
+      "description": "Reading lists, tools, and resources for academic work."
+    },
+    {
+      "slug": "sartorial",
+      "title": "Sartorial",
+      "description": "Notes on clothing, tailoring, and personal style."
+    },
+    {
+      "slug": "rowing",
+      "title": "Rowing",
+      "description": "Notes on rowing, technique, and training."
+    },
+    {
+      "slug": "cycling",
+      "title": "Cycling",
+      "description": "Notes on cycling, routes, and equipment."
+    },
+    {
+      "slug": "intpoli",
+      "title": "Political Analysis",
+      "description": "Notes and analysis on politics and international affairs."
+    },
+    {
+      "slug": "firearms",
+      "title": "Fine Firearms",
+      "description": ""
+    },
+    {
+      "slug": "boats",
+      "title": "Vintage Boats",
+      "description": ""
+    },
+    {
+      "slug": "cars",
+      "title": "Vintage Cars",
+      "description": ""
+    },
+    {
+      "slug": "bristol",
+      "title": "Bristol",
+      "description": "",
+      "parent": "cars"
+    },
+    {
+      "slug": "db-am",
+      "title": "Aston Martin — DB Series",
+      "description": "",
+      "parent": "cars"
+    },
+    {
+      "slug": "hongqi",
+      "title": "Hongqi",
+      "description": "",
+      "parent": "cars"
+    }
+  ]
+}
