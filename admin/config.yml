@@ -2,7 +2,7 @@
 # Full instructions: DECAP_SETUP.md. No passwords or tokens belong here.
 backend:
   name: turbo-github
-  turbo_site_id: YOUR_TURBO_SITE_ID
+  turbo_site_id: e38c2fbe-0ea8-4a4d-9526-17bf6c6e74a4
   branch: main
 publish_mode: simple
 media_folder: assets/uploads
