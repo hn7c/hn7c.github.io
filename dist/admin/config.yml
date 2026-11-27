@@ -1,0 +1,381 @@
+# Replace YOUR_TURBO_SITE_ID with the UUID from your Decap Turbo site.
+# Full instructions: DECAP_SETUP.md. No passwords or tokens belong here.
+backend:
+  name: turbo-github
+  turbo_site_id: YOUR_TURBO_SITE_ID
+  branch: main
+publish_mode: simple
+media_folder: assets/uploads
+public_folder: assets/uploads
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+collections:
+- name: work
+  label: Work
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/work
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: &id001
+  - label: Title
+    name: title
+    widget: string
+  - label: Date
+    name: date
+    widget: datetime
+    default: '{{now}}'
+    format: YYYY-MM-DD
+    date_format: YYYY-MM-DD
+    time_format: false
+  - label: Short description
+    name: summary
+    widget: text
+    required: false
+    default: ''
+  - label: Keep off the public website
+    name: draft
+    widget: boolean
+    default: true
+    required: false
+    hint: Turn this OFF when ready to publish. A public repository still exposes draft
+      source files.
+  - label: Post
+    name: body
+    widget: markdown
+    hint: Start headings at level 2. For PDFs or slides, upload in Media and insert
+      a link to assets/uploads/your-file.pdf.
+- name: cats
+  label: Cat pictures
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/cats
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: forensics
+  label: Forensic Sciences
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/forensics
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: chips
+  label: Semiconductors
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/chips
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: optics
+  label: Optics
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/optics
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: emergency-lighting
+  label: Emergency Vehicle Lighting
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/emergency-lighting
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: mathematics
+  label: Mathematics
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/mathematics
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: econ
+  label: Economics
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/econ
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: art
+  label: Art History
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/art
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: recs
+  label: Resources for Academia
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/recs
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: sartorial
+  label: Sartorial
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/sartorial
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: rowing
+  label: Rowing
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/rowing
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: cycling
+  label: Cycling
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/cycling
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: intpoli
+  label: Political Analysis
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/intpoli
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: firearms
+  label: Fine Firearms
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/firearms
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: boats
+  label: Vintage Boats
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/boats
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: cars
+  label: Vintage Cars
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/cars
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: bristol
+  label: Vintage Cars — Bristol
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/bristol
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: db-am
+  label: Vintage Cars — Aston Martin — DB Series
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/db-am
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001
+- name: hongqi
+  label: Vintage Cars — Hongqi
+  label_singular: Post
+  description: Choose New Post to write. Entries named Your post title are manual-writing
+    templates; do not edit them in the CMS.
+  folder: content/posts/hongqi
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  summary: '{{title}} — {{date}}'
+  sortable_fields:
+  - date
+  - title
+  editor:
+    preview: false
+  fields: *id001

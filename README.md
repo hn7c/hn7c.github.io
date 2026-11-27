@@ -2,6 +2,10 @@
 
 A GitHub Pages website with a plain early-2000s academic style: white background, Times text, blue links, and simple document layouts. All personal details remain placeholders. The homepage links to Resume and the topic blogs. Bristol, Aston Martin — DB Series, and Hongqi are nested under Vintage Cars.
 
+## Browser editor: Decap CMS
+
+The `admin/` folder now includes Decap CMS configuration for all 20 blog sections. Follow [DECAP_SETUP.md](DECAP_SETUP.md) to connect your GitHub repository and replace the Turbo Site ID placeholder. The build includes `/admin/`, which shows setup instructions until connected. No account, repository authorization, or working login is included in the ZIP. The manual Markdown workflow below remains available.
+
 **To publish a post, add one Markdown file. You do not edit the menu, archive, or generated HTML.**
 
 ## Easiest way: edit on GitHub

@@ -121,7 +121,7 @@ def build(root=ROOT, output=None):
     root = Path(root).resolve()
     output = Path(output or root / 'dist').resolve()
     # Output is generated-only. Restrict it to a distinct child of the project.
-    if output.parent != root or output.name in {'assets', 'content', 'templates', 'tests', '.github', '.openai', '.git'}:
+    if output.parent != root or output.name in {'admin', 'assets', 'content', 'templates', 'tests', '.github', '.openai', '.git'}:
         raise ValueError('Output must be a separate generated folder directly inside the project')
     config = json.loads((root / 'site.json').read_text())
     section_list = config['sections']
@@ -142,6 +142,8 @@ def build(root=ROOT, output=None):
     with tempfile.TemporaryDirectory(prefix='.site-build-', dir=root) as temporary:
         stage = Path(temporary)
         shutil.copytree(root / 'assets', stage / 'assets')
+        if (root / 'admin').is_dir():
+            shutil.copytree(root / 'admin', stage / 'admin')
         (stage / '.nojekyll').touch()
 
         def page(path, title, body, active=None, description='', home=False, course=False):
